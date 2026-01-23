@@ -4,11 +4,11 @@ function openModal(index) {
   let box = document.querySelector(`.box[data-index='${index}']`);
 
   // Haal de vraag en het juiste antwoord uit de dataset van de box
-  let questionText = box.dataset.question;
+  let riddleText = box.dataset.riddle;
   let correctAnswer = box.dataset.answer;
 
   // Zet de vraagtekst in het modalvenster
-  document.getElementById('question').innerText = questionText;
+  document.getElementById('riddle').innerText = riddleText;
 
   // Zet het correcte antwoord in de modal, zodat we het later kunnen vergelijken
   document.getElementById('modal').dataset.answer = correctAnswer;
@@ -26,7 +26,7 @@ function closeModal() {
   // Zet de overlay en modal weer op 'none' zodat ze niet meer zichtbaar zijn
   document.getElementById('overlay').style.display = 'none';
   document.getElementById('modal').style.display = 'none';
-  
+
   // Maak de feedback tekst leeg
   document.getElementById('feedback').innerText = '';
 }
@@ -35,10 +35,10 @@ function closeModal() {
 function checkAnswer() {
   // Haal het antwoord van de gebruiker op uit het invoerveld en verwijder onnodige spaties
   let userAnswer = document.getElementById('answer').value.trim();
-  
+
   // Haal het juiste antwoord op uit de modal
   let correctAnswer = document.getElementById('modal').dataset.answer;
-  
+
   // Haal het feedback element op om de gebruiker te informeren
   let feedback = document.getElementById('feedback');
 

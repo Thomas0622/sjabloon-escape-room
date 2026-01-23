@@ -1,13 +1,13 @@
-CREATE TABLE questions (
+CREATE TABLE riddles (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    question VARCHAR(255) NOT NULL,
+    riddle VARCHAR(255) NOT NULL,
     answer VARCHAR(100) NOT NULL,
     hint VARCHAR(255),
     roomId INT NOT NULL
 );
 
 -- Let op, dit is een voorbeeld!
-INSERT INTO questions (question, answer, hint, roomId)
+INSERT INTO riddles (riddle, answer, hint, roomId)
 VALUES
     ('Welke Pokémon is nummer 25 in de Pokédex?', 'Pikachu', 'Het is de mascotte van Pokémon.', 1),
     ('Wat is het type van Charmander?', 'Vuur', 'Denk aan zijn vlammende staart.', 1),
