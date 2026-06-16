@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 16, 2026 at 11:24 AM
+-- Generation Time: Jun 16, 2026 at 11:29 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.30
 
@@ -46,7 +46,8 @@ INSERT INTO `riddles` (`id`, `riddle`, `answer`, `hint`, `roomId`, `timelimit(se
 (3, 'What would element 79 be', 'Gold', 'It\'s a type of metal', 2, 0, ''),
 (4, 'What\'s the furthest planet from the sun?', 'Neptune', NULL, 1, 0, ''),
 (5, 'What\'s the name of George Orwell\'s dystopian novel about mass survaillance?', '1984', NULL, 1, 0, ''),
-(6, 'Finish the title: \"Dirty Deeds...', 'Dirty Deeds Done Dirt Cheap', NULL, 1, 0, '');
+(6, 'Finish the title: \"Dirty Deeds...', 'Dirty Deeds Done Dirt Cheap', NULL, 1, 0, ''),
+(7, 'What does TNT actually stand for?', 'TriNitroToluene', 'Think of an explosive that starts with N.', 2, 0, '');
 
 --
 -- Indexes for dumped tables
@@ -66,7 +67,7 @@ ALTER TABLE `riddles`
 -- AUTO_INCREMENT for table `riddles`
 --
 ALTER TABLE `riddles`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
