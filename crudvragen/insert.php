@@ -36,9 +36,6 @@
         <label for="timelimit(seconds)">Time Limit (seconds):</label>
         <input type="number" id="timelimit(seconds)" name="timelimit(seconds)" required><br>
 
-        <label for="team">Team:</label>
-        <input type="text" id="team" name="team" required><br>
-
         <input type="submit" name="btn_ins" value="Insert">
         </form>
         
